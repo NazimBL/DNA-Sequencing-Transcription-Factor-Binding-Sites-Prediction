@@ -25,6 +25,9 @@ print(X.shape)
 model = xgb.XGBClassifier()
 model.load_model("xgb_model_gataless.json")
 
+#y_pred=model.predict(X, ntree_limit=model.best_ntree_limit)
+#print(y_pred)
+
 count=0
 y_pred=model.predict(X)
 print(y_pred)
