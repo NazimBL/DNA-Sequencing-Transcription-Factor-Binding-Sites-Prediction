@@ -79,6 +79,7 @@ print(random_search.best_params_)
 
 #Input best_estimator output to classifier's param
 
+"""
 classifier=XGBClassifier(base_score=0.5, booster='gbtree', callbacks=None,
               colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.7,
               early_stopping_rounds=None, enable_categorical=False,
@@ -93,3 +94,4 @@ classifier=XGBClassifier(base_score=0.5, booster='gbtree', callbacks=None,
 from sklearn.model_selection import cross_val_score
 score=cross_val_score(classifier,X,y_data,cv=10)
 print(score)
+"""
